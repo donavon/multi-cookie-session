@@ -13,7 +13,7 @@ export interface Options extends CookieOptions {
   /** Name of the cookie prefix to use (default="session"). This will result in cookies names "session-1", "session-2", etc */
   name?: string;
 
-  /** A long string that will be used to encrypt a secure cookie. */
+  /** A long string that will be used to sign a secure cookie. */
   secret?: string;
 
   /** A `Keygrip` object or an array of keys to enable cryptographic signing based on SHA1 HMAC, using rotated credentials.
